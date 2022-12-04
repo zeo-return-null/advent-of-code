@@ -22,4 +22,27 @@ function part1(input) {
   return splitItems;
 };
 
+
+function part2(input) {
+  const elfPriorities = [];
+  for (let i = 2; i < input.length; i += 3) {
+    elfPriorities.push(
+      input[i]
+        .split("")
+        .filter(
+          (elf) =>
+            input[i - 1].indexOf(elf) !== -1 && input[i - 2].indexOf(elf) !== -1
+        )[0]
+    );
+  }
+  const result = elfPriorities.reduce(
+    (priority, char) =>
+      priority + (char.charCodeAt(0) - (char.charCodeAt(0) >= 97 ? 96 : 38)),
+    0
+  );
+  return result;
+}
+
 console.log(part1(input));
+console.log(part2(input));
+
