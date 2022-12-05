@@ -3,10 +3,10 @@
 Solutions using JavaScript for [Advent of Code](https://adventofcode.com/2022).
 
 - [x] Day 1: Calorie Counting
-- [] Day 2
-- [] Day 3
-- [] Day 4
-- [] Day 5
+- [X] Day 2: Rock Paper Scissors
+- [X] Day 3: Rucksack Reorganization
+- [X] Day 4: Camp Cleanup
+- [] Day 5: Supply Stacks
 - [] Day 6
 - [] Day 7
 - [] Day 8
