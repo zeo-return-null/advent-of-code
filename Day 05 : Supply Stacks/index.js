@@ -4,7 +4,7 @@ const rawInput = fs.readFileSync("input.txt", { encoding: "utf-8" });
 
 const input = rawInput.trimEnd();
 
-function part1(input) {
+function resolution(input, part) {
   const [drawing, moves] = input.split("\n\n");
   const stacks = [];
 
@@ -19,11 +19,15 @@ function part1(input) {
   for (const move of moves.split("\n")) {
     const [item, from, to] = move.match(/\d+/g).map(Number);
     const crates = stacks[from - 1].slice(-item);
-    stacks[to - 1].push(...(crates.reverse()));
+    if (part === 1) {
+      stacks[to - 1].push(...crates.reverse());
+    } else {
+      stacks[to - 1].push(...crates);
+    }
     stacks[from - 1].length -= item;
   }
   console.log(stacks.map((stack) => stack[stack.length - 1]));
 }
 
-part1(input);
-
+resolution(input, 1);
+resolution(input, 2);

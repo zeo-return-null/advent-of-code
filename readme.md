@@ -6,7 +6,7 @@ Solutions using JavaScript for [Advent of Code](https://adventofcode.com/2022).
 - [X] Day 2: Rock Paper Scissors
 - [X] Day 3: Rucksack Reorganization
 - [X] Day 4: Camp Cleanup
-- [] Day 5: Supply Stacks
+- [X] Day 5: Supply Stacks
 - [] Day 6
 - [] Day 7
 - [] Day 8
