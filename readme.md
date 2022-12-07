@@ -7,8 +7,8 @@ Solutions using JavaScript for [Advent of Code](https://adventofcode.com/2022).
 - [X] Day 3: Rucksack Reorganization
 - [X] Day 4: Camp Cleanup
 - [X] Day 5: Supply Stacks
-- [] Day 6
-- [] Day 7
+- [X] Day 6: Tuning Trouble
+- [] Day 7: No Space Left On Device
 - [] Day 8
 - [] Day 9
 - [] Day 10
